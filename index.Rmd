@@ -32,12 +32,12 @@ metrics = metrics[is.numeric(metrics$impressions)
                   & metrics$impressions > 0
                   & metrics$id != 513495667927711744,]
 
-data = merge(x=tweets, y=metrics, by="id", all=F)
+dataRaw = merge(x=tweets, y=metrics, by="id", all=F)
 
 # For visualization purpose, just take tweets with 200 <= impressions <= 400
-data = data[200 <= data$impressions
-            & data$impressions <= 400
-            & (data$lang == "en" | data$lang == "ja"),]
+data = dataRaw[200 <= dataRaw$impressions
+            & dataRaw$impressions <= 400
+            & (dataRaw$lang == "en" | dataRaw$lang == "ja"),]
 
 
 data$date = as.POSIXlt(strptime(as.character(data$time), "%Y-%m-%d %H:%M %z", tz="UTC"))
@@ -57,7 +57,7 @@ data$date = as.POSIXlt(strptime(as.character(data$time), "%Y-%m-%d %H:%M %z", tz
 
 *** =left
 
-- In 2014, I tweeted `r nrow(data)` times.
+- In 2014, I tweeted `r nrow(dataRaw)` times.
 - Each has metrics such as:
     - *Impressions*: the number of users who saw the tweet
     - *Engagements*: the number of user's actions such as retweets, replies,

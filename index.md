@@ -26,7 +26,7 @@ knit        : slidify::knit2slides
 
 *** =left
 
-- In 2014, I tweeted 52 times.
+- In 2014, I tweeted 851 times.
 - Each has metrics such as:
     - *Impressions*: the number of users who saw the tweet
     - *Engagements*: the number of user's actions such as retweets, replies,
