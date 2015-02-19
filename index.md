@@ -64,8 +64,9 @@ the content of the tweets.
 - So, I built an app that has a slide bar to choose the months to display
 all the tweets in the month along with the chart.
 - Please try out the app at:
-    https://daigotanaka.shinyapps.io/shiny_twitter_chart/
-
+    https://daigotanaka.shinyapps.io/shiny_twitter_chart
+- Source code is here:
+    https://github.com/daigotanaka/shiny_twitter_chart
 *** =right
 
 <img src="./assets/img/screen_shot.png" style="width:100%"/>
